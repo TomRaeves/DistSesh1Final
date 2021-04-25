@@ -2,7 +2,6 @@ package com.company;
 
 import java.io.*;
 import java.net.*;
-import java.util.Scanner;
 
 public class ServerThread extends Thread {
     private Socket socket;
@@ -14,7 +13,8 @@ public class ServerThread extends Thread {
     public void run() {
         try {
 
-            FileInputStream fr = new FileInputStream("C:\\Users\\tomra\\Downloads\\test.txt"); //we choose the File that serves as the input
+            FileInputStream fr = new FileInputStream("C:\\Users\\tomra\\Downloads\\test.txt");
+            //we choose the File that serves as the input
             byte b[] =new byte[2002];
             fr.read(b,0, b.length); //We read the content of the file
             OutputStream os = socket.getOutputStream();
