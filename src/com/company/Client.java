@@ -22,6 +22,6 @@ public class Client {
         fr.close(); //When the client has received the file everything can be closed (streams and socket)
         is.close();
         soc.close();
-        System.out.println("File is transferred: Client is done!");
+        System.out.println("File is transferred: Client is done and disconnected!");
     }
 }

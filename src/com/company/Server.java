@@ -18,6 +18,8 @@ public class Server {
 
                 new ServerThread(socket).start(); //for multithreading we need to make a thread per client
 
+                System.out.println("Client disconnected: File has been transferred!");
+
             }
         } catch (IOException ex) {
             System.out.println("Server exception: " + ex.getMessage());
